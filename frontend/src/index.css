@@ -1,1 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+:root {
+  --color-primary: #191970;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+html, body {
+    background-color: #E6E6FA;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: unset;
+}
