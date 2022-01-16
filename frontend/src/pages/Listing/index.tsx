@@ -30,19 +30,15 @@ function Listing() {
             });
     }, [pageNumber]);
 
-    const movie = {
-        id: 1,
-        image: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i0uajcHH9yogXMfDHpOXexIukG9.jpg",
-        title: "Peaky Blinders",
-        count: 2,
-        score: 4.5
-    };
+   const handlePageChange = (newPageNumber : number) => {
+       setPageNumber(newPageNumber);
+   }
 
 
     return (
         <>
 
-            <Pagination />
+            <Pagination page={page} onChange={handlePageChange} />
 
             <div className="container">
                 <div className="row">
